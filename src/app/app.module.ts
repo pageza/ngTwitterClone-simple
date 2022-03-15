@@ -21,6 +21,7 @@ import {MatInputModule} from "@angular/material/input";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { PostsListComponent } from './posts/posts-list/posts-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
