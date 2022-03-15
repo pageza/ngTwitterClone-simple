@@ -9,7 +9,7 @@ export class PostsListComponent implements OnInit {
   posts = [
     {
       postTitle: 'First',
-      postContent: 'First Content'
+      postContent: 'First Content going to add much more to this to see how much more space the different length content'
     },
     {
       postTitle: 'second',
@@ -17,7 +17,7 @@ export class PostsListComponent implements OnInit {
     },
     {
       postTitle: 'third',
-      postContent: 'THird Content'
+      postContent: 'Third Content'
     },
     {
       postTitle: 'Fourth',
