@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+<!--    TODO: Center header text on card, maybe-->
+    <mat-card-title>Add a Post</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="postForm" (ngSubmit)="onSubmitPost()">
+      <mat-form-field>
+        <input matInput formControlName="postTitle" placeholder="Title" type="text" required>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput formControlName="postContent" placeholder="Enter your post here..." type="text" required></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="postImage" placeholder="Add an image" type="text">
+      </mat-form-field>
+      <button mat-raised-button color="warn" routerLink="/home">Cancel</button>
+      <span class="spacer1"></span>
+      <button mat-raised-button color="primary" type="submit">Post</button>
+    </form>
+  </mat-card-content>
+</mat-card>

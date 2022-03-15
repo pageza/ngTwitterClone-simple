@@ -1,0 +1,13 @@
+mat-card {
+  /*margin: 5% 5% 30% 30%;*/
+  margin: 0 auto;
+  background: lightgray;
+  width: 20%;
+  text-align: center;
+}
+mat-form-field {
+  width: 100%;
+}
+.spacer1 {
+  margin: 0 0 40% 40%;
+}
