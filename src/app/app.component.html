@@ -1,26 +1,19 @@
-<mat-sidenav-container>
-<!--  <sidenav></sidenav>-->
-<!--  <toolbar></toolbar>-->
-  <mat-sidenav #start (click)="start.close()">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/">
-        <mat-icon>home</mat-icon>
-      </a>
-      <a mat-list-item>
-        <mat-icon>person_add</mat-icon>
-      </a>
-      <a mat-list-item>
-        <mat-icon>account_circle</mat-icon>
-      </a>
-    </mat-nav-list>
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="over">
+    <sidenav></sidenav>
   </mat-sidenav>
-
-  <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" (click)="start.open('mouse')"><mat-icon>menu</mat-icon></button>
-    <span class="spacer1"></span>
-    <h2>USERNAME</h2>
-    <span class="spacer1"></span>
-    <h2>ngTwitterClone</h2>
-  </mat-toolbar>
-  <router-outlet></router-outlet>
+  <mat-sidenav-content>
+<!--    /* TODO: Refactor this later to use a component instead of hardcode */-->
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" >
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <span class="spacer1"></span>
+<!--      /* TODO: replace hardcode with dynamic code from logged in User*/-->
+      <h2>USERNAME</h2>
+      <span class="spacer1"></span>
+      <h2>ngTwitterClone</h2>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>

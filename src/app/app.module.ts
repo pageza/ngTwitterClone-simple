@@ -11,12 +11,19 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatListModule} from "@angular/material/list";
 import {RouterModule} from "@angular/router";
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +34,7 @@ import {RouterModule} from "@angular/router";
     MatSidenavModule,
     MatListModule,
     RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
