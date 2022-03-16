@@ -17,7 +17,8 @@ export class PostsListComponent implements OnInit {
     },
     {
       postTitle: 'third',
-      postContent: 'Third Content'
+      postContent: 'Third Content',
+
     },
     {
       postTitle: 'Fourth',
