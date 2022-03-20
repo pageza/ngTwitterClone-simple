@@ -1,0 +1,10 @@
+mat-card {
+  /*margin: 5% 5% 30% 30%;*/
+  margin: 5% auto;
+  background: lightgoldenrodyellow;
+  width: 30%;
+  text-align: center;
+}
+mat-form-field {
+  width: 100%;
+}
